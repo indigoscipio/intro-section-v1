@@ -1,0 +1,22 @@
+{
+  "name": "intro-section-v1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "scss": "node-sass -w scss/ -o css/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/indigoscipio/intro-section-v1.git"
+  },
+  "author": "Samuel Oktavianus",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/indigoscipio/intro-section-v1/issues"
+  },
+  "homepage": "https://github.com/indigoscipio/intro-section-v1#readme",
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
