@@ -41,7 +41,8 @@ button,
     .button,
     .button--secondary,
     .button--primary {
-      font-size: 1.8rem; } }
+      font-size: 1.8rem;
+      cursor: pointer; } }
 
 .button--secondary {
   border: 1px solid #141414;
@@ -192,9 +193,19 @@ button,
     background-repeat: no-repeat;
     background-position: cover;
     background-image: url(../images/icon-arrow-down.svg); }
+  .header__links > li > a.active::after {
+    background-image: url(../images/icon-arrow-up.svg); }
   .header__links .dropdown {
     margin-left: 2.4rem;
-    transition: all 0.3s ease; }
+    transition: all 0.3s ease;
+    display: block;
+    visibility: hidden;
+    display: none;
+    animation: dropdown 0.2s linear; }
+    .header__links .dropdown.active {
+      animation: dropdown 0.2s linear;
+      display: block;
+      visibility: visible; }
     .header__links .dropdown img {
       position: relative;
       top: 0.2rem;
@@ -264,8 +275,24 @@ button,
   grid-template-columns: repeat(4, 1fr);
   justify-items: center;
   align-items: center; }
+  @media screen and (min-width: 982px) {
+    .hero__testimonials {
+      margin-top: 9.6rem; } }
   .hero__testimonials img {
     width: 75%; }
+
+@keyframes dropdown {
+  0% {
+    display: none;
+    opacity: 0;
+    transform: translateY(-3.2rem); }
+  1% {
+    opacity: 0;
+    display: block; }
+  100% {
+    opacity: 1;
+    display: block;
+    transform: translateY(0); } }
 
 .heading {
   font-weight: 700;

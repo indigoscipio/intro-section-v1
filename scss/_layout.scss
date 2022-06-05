@@ -164,10 +164,23 @@
       background-image: url(../images/icon-arrow-down.svg);
     }
 
+    & > li > a.active::after {
+      background-image: url(../images/icon-arrow-up.svg);
+    }
+
     .dropdown {
       margin-left: 2.4rem;
       transition: all 0.3s ease;
-      // display: none;
+      display: block;
+      visibility: hidden;
+      display: none;
+      animation: dropdown 0.2s linear;
+
+      &.active {
+        animation: dropdown 0.2s linear;
+        display: block;
+        visibility: visible;
+      }
 
       img {
         position: relative;
@@ -252,8 +265,30 @@
     justify-items: center;
     align-items: center;
 
+    @include lg {
+      margin-top: 9.6rem;
+    }
+
     img {
       width: 75%;
     }
+  }
+}
+
+@keyframes dropdown {
+  0% {
+    display: none;
+    opacity: 0;
+    transform: translateY(-3.2rem);
+  }
+  1% {
+    opacity: 0;
+    display: block;
+  }
+  100% {
+    opacity: 1;
+    display: block;
+
+    transform: translateY(0);
   }
 }
