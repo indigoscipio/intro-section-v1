@@ -20,6 +20,7 @@
     />
   </head>
   <body>
+    <div class="overlay"></div>
     <header class="header">
       <nav class="header__nav wrapper">
         <div class="header__logo">
@@ -36,10 +37,26 @@
             <li>
               <a href="#">Features</a>
               <ul class="dropdown">
-                <li><a href="">Todo List</a></li>
-                <li><a href="">Calendar</a></li>
-                <li><a href="">Reminders</a></li>
-                <li><a href="">Planning</a></li>
+                <li>
+                  <img src="images/icon-todo.svg" alt="" />
+                  <a href="#">Todo List</a>
+                </li>
+                <li>
+                  <img src="images/icon-calendar.svg" alt="" />
+                  <a href="#">Calendar</a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="images/icon-reminders.svg" alt="" />
+                    Reminders</a
+                  >
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="images/icon-planning.svg" alt="" />
+                    Planning</a
+                  >
+                </li>
               </ul>
             </li>
             <li>
@@ -62,22 +79,24 @@
     </header>
 
     <section class="hero">
-      <div class="wrapper">
-        <div class="hero__image">
-          <img src="images/image-hero-mobile.png" alt="" />
-        </div>
-        <div class="hero__text">
-          <h1 class="heading heading-1">Make remote work</h1>
-          <p>
-            Get your team in sync, no matter your location. Streamline
-            processes, create team rituals, and watch productivity soar.
-          </p>
-          <button class="button button--primary">Learn More</button>
-          <div class="hero__testimonials">
-            <img src="images/client-databiz.svg" alt="" />
-            <img src="images/client-audiophile.svg" alt="" />
-            <img src="images/client-meet.svg" alt="" />
-            <img src="images/client-maker.svg" alt="" />
+      <div class="wrapper wrapper-py">
+        <div class="hero__content">
+          <div class="hero__image">
+            <img src="images/image-hero-mobile.png" alt="" />
+          </div>
+          <div class="hero__text">
+            <h1 class="heading heading-1">Make remote work</h1>
+            <p>
+              Get your team in sync, no matter your location. Streamline
+              processes, create team rituals, and watch productivity soar.
+            </p>
+            <button class="button button--primary">Learn More</button>
+            <div class="hero__testimonials">
+              <img src="images/client-databiz.svg" alt="" />
+              <img src="images/client-audiophile.svg" alt="" />
+              <img src="images/client-meet.svg" alt="" />
+              <img src="images/client-maker.svg" alt="" />
+            </div>
           </div>
         </div>
       </div>
@@ -93,5 +112,6 @@
 
   Learn more
    -->
+    <script src="script.js"></script>
   </body>
 </html>

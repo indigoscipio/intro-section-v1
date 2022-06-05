@@ -12,6 +12,10 @@
 h1,
 .heading-1 {
   font-size: $fs-32;
+
+  @include lg {
+    font-size: $fs-64;
+  }
 }
 
 p {
